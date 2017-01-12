@@ -15,7 +15,7 @@ function draw() {
   ellipseMode(CENTER);
 
   fill(Rcolor,Gcolor,Bcolor);
-  circulo(posX,posY,60,60);
+  circulo(posX,posY,60);
 
   //if (mouseIsPressed)
   // paintEllipse();
