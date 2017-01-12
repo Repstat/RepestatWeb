@@ -1,19 +1,24 @@
+var mi_circulo = {
+  posX:100, 
+  posY:2,
+  Rcolor:200,
+  Gcolor:250,
+  Bcolor:200
+};
+
 function setup() {
 	createCanvas(800,600);
 }
 
 function draw() {
 	background(20,30,50);
-	ellipseMode(CENTER);
-  fill(255,56,45);
-  stroke(0,255,255);
-  ellipse(40, 200, 80, 80);
-  fill(60,255,45,150);
-  stroke(255,255,0);
-  rect(0,200,80,80);
+  ellipseMode(CENTER);
 
-  if (mouseIsPressed)
-    paintEllipse();
+  fill(Rcolor,Gcolor,Bcolor);
+  circulo(posX,posY,60,60);
+
+  //if (mouseIsPressed)
+  // paintEllipse();
   
   //triangle();
   //arc();
