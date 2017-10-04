@@ -12,17 +12,18 @@ function setup() {
 
 function draw() {
 	background(20,30,50);
-  ellipseMode(CENTER);
-
-  fill(cir.Rcolor,cir.Gcolor,cir.Bcolor);
-  ellipse(cir.posX,cir.posY,60);
-  if(mouseIsPressed){
-    cir.posX =mouseX;
-    cir.posY = mouseY;
-  }
+	
+	ellipseMode(CENTER);
+	fill(cir.Rcolor,cir.Gcolor,cir.Bcolor);
+	ellipse(cir.posX,cir.posY,60);
+	fill(cir.Rcolor-12,cir.Gcolor-12,cir.Bcolor-12);
+	ellipse(cir.posX,cir.posY,55);
+	if(mouseIsPressed){
+		cir.posX =mouseX;
+		cir.posY = mouseY;
+	}
   //if (mouseIsPressed)
   // paintEllipse();
-  
   //triangle();
   //arc();
   //point();
